@@ -484,6 +484,87 @@ plugins:
       - Relev
   - name: 'MLU.esp'
     global_priority: 60
+  - name: 'kye_mlu_patch.esp'
+    after:
+      - 'know_your_enemy.esp'
+      - 'MLU.esp'
+    tag:
+      - Invent
+  - name: 'MLU - AAE Ultimate Edition.esp'
+    after:
+      - 'MLU - Immersive Armors.esp'
+  - name: 'MLU - Ars Metallica.esp'
+  - name: 'MLU_EZ update2.esp'
+    req:
+      - 'MLU.esp'
+  - name: 'MLU - Immersive Armors.esp'
+    tag:
+      - Delev
+      - Invent
+      - Relev
+  - name: 'MLU - Improved Closefaced Helmets.esp'
+    req:
+      - 'MLU.esp'
+    tag:
+      - -Names
+      - Stats
+    clean:
+      - crc: 0xB8A1EE4E
+        util: SSEEdit v3.2.1
+  - name: 'MLU - Improved Daedric Artifacts.esp'
+    tag:
+      - Stats
+  - name: 'MLU - Inigo.esp'
+    req:
+      - 'MLU.esp'
+    tag:
+      - Invent
+  - name: 'MLU - InsanitySorrow Weapons Pack.esp'
+    req:
+      - 'MLU.esp'
+    tag:
+      - Delev
+      - Relev
+      - Stats
+  - name: 'MLU - Lore Weapon Expansion.esp'
+    tag:
+      - Delev
+      - Relev
+      - Stats
+  - name: 'MLU - Mainland Stalhrim.esp'
+    tag:
+      - Delev
+  - name: 'MLU - Remove Tempering Nerf.esp'
+  - name: 'MLU - Simple Magic Rebalance.esp'
+    req:
+      - 'MLU.esp'
+      - 'Simple Magic Rebalance.esp'
+  - name: 'MLU - Summermyst.esp'
+    tag:
+      - Delev
+      - Invent
+      - Relev
+  - name: 'MLU - Unique Uniques Patch.esp'
+    tag:
+      - Stats
+  - name: 'MLU - Vanilla Encounter Zones.esp'
+  - name: 'MLU - WICO.esp'
+    tag:
+      - Invent
+  - name: 'MLU - Wild World.esp'
+    tag:
+      - Invent
+  - name: 'MLU - ZIA.esp'
+    req:
+      - 'MLU.esp'
+    tag:
+      - Stats
+  - name: 'MLU_Bruma.esp'
+    req:
+      - 'MLU.esp'
+    tag:
+      - Delev
+      - Relev
   - name: 'JK''s Riverwood.esp'
     after:
       - 'Verdant - A Skyrim Grass Plugin SSE Version.esp'
@@ -929,3 +1010,8 @@ plugins:
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/2829' ]
     after:
       - 'JKs Whiterun.esp'
+  - name: 'SIM.esp'
+    global_priority: 110
+  - name: 'SIM Patch.esp'
+    after:
+      - 'SIM.esp'
