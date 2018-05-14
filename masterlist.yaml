@@ -508,9 +508,6 @@ plugins:
     tag:
       - -Names
       - Stats
-    clean:
-      - crc: 0xB8A1EE4E
-        util: SSEEdit v3.2.1
   - name: 'MLU - Improved Daedric Artifacts.esp'
     tag:
       - Stats
@@ -548,6 +545,8 @@ plugins:
     tag:
       - Stats
   - name: 'MLU - Vanilla Encounter Zones.esp'
+    after:
+      - 'MLU.esp'
   - name: 'MLU - WICO.esp'
     tag:
       - Invent
